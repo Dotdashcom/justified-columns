@@ -1,0 +1,20 @@
+{
+  "name": "justified-columns",
+  "version": "0.1.0",
+  "homepage": "https://github.com/benjamincochran/justified-columns",
+  "authors": [
+    "Ben Cochran <bcochran@about.com>"
+  ],
+  "description": "Adds vertical justification to elements using the CSS column layout to achieve a Pinterest-style \"Masonry\" effect",
+  "main": "lib/justified-columns.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "multi-columns",
+    "justify",
+    "vertical",
+    "columns"
+  ],
+  "license": "MIT"
+}
