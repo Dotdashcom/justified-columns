@@ -5,6 +5,12 @@ Elements within each grid item are vertically stretched in proportion to their h
 
 Does not require jQuery or any other external library; runs in all modern browsers (IE9+). 
 
+## Installation
+
+```
+bower install justified-columns
+```
+
 ## Initialization
 
 Baseline implementation is a one-liner:
