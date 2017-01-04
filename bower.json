@@ -16,5 +16,6 @@
     "vertical",
     "columns"
   ],
+  "ignore": [],
   "license": "MIT"
 }
