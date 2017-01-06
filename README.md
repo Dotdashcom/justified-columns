@@ -36,6 +36,7 @@ The configuration properties available are
 * `grid` **(required)** &mdash; the element using CSS columns. Accepts a selector string, HTMLElement, or jQuery object.
 * `stretch` (optional string, defaults to `'img'`) &mdash; selector that identifies the element within each grid item to grow vertically in order to justify each column
 * `autoResize` (optional boolean, defaults to `true`) &mdash; if you don't need your columns to re-calc justification during every resize event, you can disable that behavior as a performance optimization.
+* `throttle` (optional, defaults to `25`) &mdash; time (in ms) to delay between executions justification checks.
 
 When the `JustifiedColumns` object is 
 
