@@ -1,0 +1,104 @@
+/*------------------------------------*\
+    #GLOBAL/IRRELEVANT STUFF
+\*------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f8f9f4;
+}
+
+section {
+    background: #eaefce;
+    padding: 4rem 2rem;
+}
+
+/*------------------------------------*\
+    #BLOCK
+\*------------------------------------*/
+
+.block {
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.block__title {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.block__img {
+    display: block;
+    width: 100%;
+}
+
+
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+
+
+/**
+ * Grid object
+ * 1) Over-arching grid container
+ * 2) Creates overlap effect with content below
+ */
+
+.g {
+    padding: 0.5rem;
+    max-width: 84rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -3rem;
+    /* 2 */
+}
+
+
+/**
+ * 2-to-4-up masonry grid
+ * 1) Creates a Pinterest-style, masonry grid with blocks of varying heights.
+ * 2) Set number of columns to display
+ */
+
+.g--masonry-2-to-4-up {
+    column-count: 2;
+    -moz-column-count: 2;
+    /* 2 */
+    column-gap: 0;
+    -moz-column-gap: 0;
+}
+
+@media (min-width: 40em) {
+    .g--masonry-2-to-4-up {
+        column-count: 3;
+        -moz-column-count: 3;
+        /* 2 */
+    }
+}
+
+@media (min-width: 56em) {
+    .g--masonry-2-to-4-up {
+        column-count: 4;
+        -moz-column-count: 4;
+        /* 2 */
+    }
+}
+
+
+/**
+ * Grid item
+ * 1) Direct child of the grid container element
+ * 2) Prevents content from splitting up because of the 
+ *    parent's CSS columns
+ */
+
+.g__item {
+    padding: 0.5rem;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    /* 2 */
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
