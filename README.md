@@ -19,7 +19,7 @@ Baseline implementation is a one-liner:
 var J = new JustifiedColumns('#myColumns');
 ```
 
-This assumes that you'll want to "stretch" the `<img>` in each of the item in your layout.  The height of each of the grid's children
+This assumes that you'll want to "stretch" the `<img>` in each of the item in your layout.
 
 Alternately, you get some additional control via explicit configuration:
 
@@ -27,7 +27,8 @@ Alternately, you get some additional control via explicit configuration:
 var J = new JustifiedColumns({
 	grid: '#myColumns',
 	stretch: '.col-item-img',
-	autoResize: false
+	autoResize: false,
+	throttle: 50
 });
 ```
 
@@ -36,9 +37,7 @@ The configuration properties available are
 * `grid` **(required)** &mdash; the element using CSS columns. Accepts a selector string, HTMLElement, or jQuery object.
 * `stretch` (optional string, defaults to `'img'`) &mdash; selector that identifies the element within each grid item to grow vertically in order to justify each column
 * `autoResize` (optional boolean, defaults to `true`) &mdash; if you don't need your columns to re-calc justification during every resize event, you can disable that behavior as a performance optimization.
-* `throttle` (optional, defaults to `25`) &mdash; time (in ms) to delay between executions justification checks.
-
-When the `JustifiedColumns` object is 
+* `throttle` (optional number, defaults to `25`) &mdash; time (in ms) to delay between executions justification checks. A value of `0` will disable throttling entirely (use with caution)
 
 ##Justifier
 
