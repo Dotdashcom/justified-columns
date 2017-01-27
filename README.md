@@ -28,7 +28,8 @@ var J = new JustifiedColumns({
 	grid: '#myColumns',
 	stretch: '.col-item-img',
 	autoResize: false,
-	throttle: 50
+	throttle: 50,
+	shrink: true
 });
 ```
 
@@ -38,6 +39,7 @@ The following configuration properties are available:
 * `stretch` (optional string, defaults to `'img'`) &mdash; CSS selector to identify the element within each grid item to grow vertically in order to justify each column
 * `autoResize` (optional boolean, defaults to `true`) &mdash; if you don't need your columns to re-calc justification during every resize event, you can disable that behavior as a performance optimization.
 * `throttle` (optional number, defaults to `25`) &mdash; time (in ms) to delay between executions of the justification check. A value of `0` will disable throttling entirely (use with caution)
+* `shrink` (optional boolean, defaults to `false`) &mdash; forces the columns to shrink to match the shortest column, instead of growing to match the tallest
 
 ##Justifier
 
