@@ -51,8 +51,10 @@ section {
     max-width: 84rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -3rem;
     /* 2 */
+    margin-bottom: -3rem;
+    position: relative;
+    z-index: 2;
 }
 
 
