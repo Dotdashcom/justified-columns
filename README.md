@@ -41,7 +41,7 @@ The following configuration properties are available:
 * `throttle` (optional number, defaults to `25`) &mdash; time (in ms) to delay between executions of the justification check. A value of `0` will disable throttling entirely (use with caution)
 * `shrink` (optional boolean, defaults to `false`) &mdash; forces the columns to shrink to match the shortest column, instead of growing to match the tallest
 
-##Justifier
+## Justifier
 
 The `JustifiedColumns` constructor automatically adds a `Justifier` object to the grid's DOM element (this is the same object as `J` in the examples above).  The following methods are exposed by the `Justifier` object:
 
