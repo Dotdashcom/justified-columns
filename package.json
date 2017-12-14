@@ -1,0 +1,21 @@
+{
+  "name": "justified-columns",
+  "version": "v0.3.5",
+  "description": "Adds vertical justification to grids that are using the [CSS column layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns/Using_multi-column_layouts) to achieve a [Pinterest-style \"Masonry\" effect](https://css-tricks.com/seamless-responsive-photo-grid/).",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dotdashcom/justified-columns.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/Dotdashcom/justified-columns/issues"
+  },
+  "homepage": "https://github.com/Dotdashcom/justified-columns#readme"
+}
